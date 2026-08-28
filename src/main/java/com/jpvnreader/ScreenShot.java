@@ -22,6 +22,7 @@ public class ScreenShot {
 
     }
 
+
     public BufferedImage takeScreenshot() throws IOException {
         Rectangle rectangle = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
         BufferedImage image = robot.createScreenCapture(rectangle);
