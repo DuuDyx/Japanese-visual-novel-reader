@@ -17,7 +17,8 @@ ImageIO
 
 📌 ROADMAP
  [X] Screen capture
- [] OCR implementation
+ [X] OCR implementation
+ [] Token analyzer in progress...
  [] Japanese text extraction
  [] Text processing
  [] Translation
