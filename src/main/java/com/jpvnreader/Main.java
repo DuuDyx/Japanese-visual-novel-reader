@@ -11,11 +11,12 @@ public class Main {
     public static void main(String[] args) throws IOException {
         ScreenShot screen = new ScreenShot();
         OCR ocr = new OCR();
+        TokenAnalyzer token = new TokenAnalyzer();
+        // BufferedImage imagem = ImageIO.read(new File("C:\\Users\\HOME\\Downloads\\teste.png"));
+        //String texto = ocr.recognize(imagem);
 
-        BufferedImage imagem = ImageIO.read(new File("C:\\Users\\HOME\\Downloads\\teste.png"));
-        String texto = ocr.recognize(imagem);
-
-        System.out.println(texto);
+        // System.out.println(texto);
+        token.analyze();
 
     }
 

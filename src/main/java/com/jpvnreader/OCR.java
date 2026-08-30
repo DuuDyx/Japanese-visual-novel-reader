@@ -7,6 +7,7 @@ import java.awt.image.BufferedImage;
 
 public class OCR {
     Tesseract tesseract = new Tesseract();
+    private String extract;
 
 
     //Método que vai ler a bufferedImage e retornar em texto, basicamente só pega o texto
