@@ -12,11 +12,10 @@ import java.util.List;
 
 public class TokenAnalyzer {
 
-    public void analyze () throws IOException {
+    public void analyze (String translate) throws IOException {
         Tokenizer tokeni = new Tokenizer();
-        OCR ocr = new OCR();
-        BufferedImage imagem = ImageIO.read(new File("C:\\Users\\HOME\\Downloads\\teste.png"));
-        List<Token> tokenizer = tokeni.tokenize("私は学校に行きます。");
+        //BufferedImage imagem = ImageIO.read(new File("C:\\Users\\HOME\\Downloads\\teste.png"));
+        List<Token> tokenizer = tokeni.tokenize(translate);
         for (Token token : tokenizer){
             System.out.println(token.getSurface() + "\t" + token.getAllFeatures());
         }
